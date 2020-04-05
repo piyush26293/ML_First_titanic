@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Titanic</title>
+</head>
+<body>
+<h1>This is Machine Learning Project</h1>
+<h1>This is Machine Learning Project</h1>
+<h3>Get your Predication</h3>
+<p>Please enter you passenger values</p>
+<form action="{% url 'result' %}">
+    {% csrf_token %}
+    <p>Pclass</p>
+    <input type="text" name="pclass">
+    <p>Sex</p>
+    <input type="text" name="sex">
+    <p>Age</p>
+    <input type="text" name="age">
+    <p>Sibsp</p>
+    <input type="text" name="sibp">
+    <p>Parch</p>
+    <input type="text" name="parch">
+    <p>Fare</p>
+    <input type="text" name="fare">
+    <p>Embarked</p>
+    <input type="text" name="embarked">
+    <p>Title</p>
+    <input type="text" name="title">
+    <br>
+    <br>
+    <br>
+    <br>
+    <input type="submit">
+
+
+
+</form>
+
+
+
+
+{#<a href="{% url 'result' %}">click here</a>#}
+</body>
+</html>
